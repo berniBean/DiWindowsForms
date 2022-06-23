@@ -8,6 +8,6 @@ namespace Dependencias.Interfaces
 {
     public interface IDateWriter
     {
-        void WriteDate();
+        string WriteDate();
     }
 }

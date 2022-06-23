@@ -44,9 +44,11 @@
     <Compile Include="Clases\Configuracion.cs" />
     <Compile Include="Clases\ConsoleOutput.cs" />
     <Compile Include="Clases\TodayWriter.cs" />
+    <Compile Include="Clases\User.cs" />
     <Compile Include="Interfaces\IConfig.cs" />
     <Compile Include="Interfaces\IDateWriter.cs" />
     <Compile Include="Interfaces\IOutput.cs" />
+    <Compile Include="Interfaces\IUser.cs" />
     <Compile Include="Interfaces\IWriter.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

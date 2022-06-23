@@ -4,17 +4,21 @@ using System.Windows.Forms;
 
 namespace DIForms
 {
-    public partial class Form1 : Form, IDateWriter
+    public partial class Form1 : Form
     {
-        private IOutput _output;
-        public Form1(IOutput output)
+        
+        public Form1(IUser user, IDateWriter dateToday, IOutput output)
         {
             InitializeComponent();
+            MessageBox.Show(user.Login());
+            MessageBox.Show(dateToday.WriteDate()); 
+
         }
 
-        public void WriteDate()
+
+        private void Form1_Load(object sender, EventArgs e)
         {
-            _output.Write(DateTime.Today.ToShortDateString());
+
         }
     }
 }

@@ -11,9 +11,9 @@ namespace Dependencias.Clases
         {
             _output = output;
         }
-        public void WriteDate()
+        public string WriteDate()
         {
-            _output.Write(DateTime.Today.ToShortDateString());
+           return _output.Write(DateTime.Today.ToShortDateString());
         }
     }
 }
